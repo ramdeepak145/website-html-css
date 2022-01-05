@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+header{
+   
+    background-color: darkcyan;
+    width: 100%;
+    height: 120px;
+
+}
+header .header-name
+{
+    font-family: "Catamaran";
+    font-size: 24px;
+    font-weight: 900; 
+    text-transform: uppercase;
+    color: #111;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+header nav ul{
+    /* display: block;*/
+    margin: 0 auto; 
+    width: fit-content;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 16px;
+    text-align: center;
+}
+
+header nav ul li a{
+    font-family: 'Catamaran';
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #111;
+}
+header .header-call{
+    display: none;
+}
+
+
+@media only screen and (min-width:1000px){
+    header .header-name{
+        text-align: left;
+        margin: 32px 0 ;
+        line-height: 38px;
+        padding: 0px 20px 0px 40px;
+        border-right:3px solid #111 ;
+        float: left;
+    }
+    header nav ul{
+        margin: 20px 0px 0px 20px  ;
+        float: left;
+    }
+    header nav ul li a{
+        line-height: 61px;
+    }
+    header .header-call{
+        display: block;
+        font-family: 'Catamaran';
+        font-size: 16px;
+        text-transform: uppercase;
+        color: white;
+        background-color: black;
+        line-height: 35px;
+        border: 1px solid #111;
+        float: right;
+        margin-right:40px ;
+        margin-top: 32px;
+        padding: 0 20px;
+        border-radius: 100px;
+    }
+    header nav ul li a:hover
+{
+    background-color: black;
+    color: white;
+}
+}
+    .main-banner
+    {
+        margin-top: 50px;
+        width: 100%;
+        background-image: url('webdev2.jpeg');
+        background-size: cover;
+        float: left;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        
+    }
+    .main-banner h2{
+        font-family: 'Catamaran';
+        font-size: 50px;
+        font-weight: 900;
+        line-height: 70px;
+        text-align: center;
+        color: #fff;
+        text-shadow: 2px 2px 8px #111;
+        padding-top: 100px;
+        float: left;
+    }
+    .main-banner h1{
+        font-family: 'EB Garamond';
+        font-size: 28px;
+        font-weight: 100;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+        font-style: italic;
+        text-shadow: 2px 2px 8px #111;
+        padding-top: 50px ;
+        padding-bottom: 100px;
+    }
+    #options
+    {
+        width: 30%;
+        float: right;
+    }
+    
+    @media only screen and (min-width:1000px){
+        main{
+          display: flex; 
+        }
+        .wrapper{
+            width: 50%;
+            margin: 0px;
+            margin-top: 70px;
+            background-size: cover;
+            float: right;
+        }
+        .main-banner{
+            width: 100%;
+            background-size: cover;
+            height: 1000px;
+        }
+        .main-banner h2{
+            float: left;
+            margin-left: 90px;
+            margin-top: 200px;
+        }
+        .main-box{
+            overflow: hidden;
+        }
+        .main-box
+        {
+            width: 100%;
+        }
+        .main-box div{
+            margin: 15px 10px 0px;
+            height: 130px;
+            background-color: dimgrey;
+            text-align: center;
+            border-radius: 20px;
+        }
+        
+        .main-box div h3{
+            line-height: 130px;
+            color: white;
+        }
+        footer{
+            clear: both;
+        }
+        .end
+        {
+        display: block;
+        background-size: auto;
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        line-height:normal;
+        margin: 50px 50px;
+        }
+    }
+    @media only screen and (max-width:1000px)
+    {
+        .main-box {
+            display: flex;
+            flex-direction: row;
+            float: left;
+            line-height: 100px;
+         }
+    }
+    .main-box div{
+        margin: 15px 10px 0px;
+        height: 130px;
+        background-color: dimgrey;
+        text-align: center;
+        border-radius: 0px;
+        
+    }
+    .wrapper .main-box div
+    {
+        display: inline-block;
+        padding: 0 16px;
+        text-align: center;
+    }
+    .main-box-rectangle{
+        width: 100%;
+        float: right;
+        text-transform: uppercase;
+        color: white;
+        line-height: 130px;
+        
+    }
+    .end
+    {
+        display: block;
+        background-size: cover;
+        background-color: #f2f2f2;
+        height: 300px;
+        border-radius: 10px;
+        line-height:normal;
+        margin: 50px 50px;
+        overflow:visible;
+    }
+    .end .main-box-details
+    {
+        float: left;
+        margin: 30px;
+        padding: 20px;
+        overflow: hidden;
+    }
+    .end .main-box-address 
+    {
+        text-align: center;
+        margin: 30px;
+        padding: 20px;
+        color: black;
+    }
+    #ab
+    {
+        color:black;
+        text-shadow: white;
+        text-align: center;
+        padding: 7px;
+        font-style: 'Catamaran';
+        font-weight: 500;
+        font-size: 20px;
+    }
+    #cd
+    {
+        font-size: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+    }
+    #address
+    {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: black;
+    }
+
+
+    /* about */
+
+    .main-about{
+        text-align: left;
+        background-color: #f2f2f2;
+        padding: 100px;
+        background-size: 2000px;
+    }
+    
+    .main-about img{
+        border-radius: 10px;
+        width: 100px;
+    }
+    #main-about-hi{
+        margin-top: 50px;
+    }
+    .main-about p{
+        font-family: 'Catamaran';
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 40px;
+        text-align: justify;
+        color: #111;
+    }
+    .main-about li{
+        margin-left: 50px;
+        list-style-type: circle;
+        font-family: 'Catamaran';
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 40px;
+        text-align: justify;
+        color: #111;
+    }
+
+    /* contact */
+
+    .contact-block
+    {
+        
+        display: block;
+        background-color: lightgrey;
+        text-align: center;
+        height: 230px;
+    }
+    .contact-block ul
+    {
+        padding: 0 16px;
+        font-style: "Catamaran";
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+        display: block;
+        margin-top: 250px;
+    }
+    #contact
+    {
+        line-height: 90px;
+    }
+    .wrapper-contact{
+        width: 70%;
+        margin: auto;
+        
+        background-size: cover; 
+        height: 130px;
+
+    }
+    #end-contact
+    {
+        margin-top: 450px;
+    }
+    .contact-block li img{
+        width: 20px;
+        height: 20px;
+        margin-top: 10px;
+    }
+
+
+    /* gallery */
+
+
+    .container
+    {
+        position: absolute;
+        max-width: fit-content;
+        background-color: #f2f2f2;
+        overflow: auto;
+        margin-top: 100px;
+    }
+   
+    .main-gallery
+    {
+        margin-top: 200px;
+        width:500px;
+        float: left;
+        margin: 5px;
+        border: 1px solid #ccc; 
+        margin-left: 60px;
+    }
+    .main-gallery img
+    {
+        width:100%;
+        height: 400px;
+    }
+    .desc
+    {
+        padding: 10px;
+        text-align: center;
+        font-size: 24px;
+    }
+    ::placeholder
+    {
+        font-size: 16px;
+        width: 100%;
+        
+    }
+    
+    .end .footer-links-sm img{
+        width: 50px;
+        float: right;
+        padding: 10px;
+    }
